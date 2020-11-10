@@ -10,8 +10,8 @@ export default {
       city: treeFall.city,
       state: treeFall.state,
       country: treeFall.country,
-      latitude: treeFall.latitude,
-      longitude: treeFall.longitude,
+      latitude: Number(treeFall.latitude),
+      longitude: Number(treeFall.longitude),
       zipcode: treeFall.zipcode,
       images: imageView.renderMany(treeFall.images),
     };
