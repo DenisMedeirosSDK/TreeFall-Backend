@@ -39,15 +39,11 @@ export class createTreeFall1603144428931 implements MigrationInterface {
           },
           {
             name: 'latitude',
-            type: 'decimal',
-            scale: 10,
-            precision: 2,
+            type: 'varchar',
           },
           {
             name: 'longitude',
-            type: 'decimal',
-            scale: 10,
-            precision: 2,
+            type: 'varchar',
           },
         ],
       })
