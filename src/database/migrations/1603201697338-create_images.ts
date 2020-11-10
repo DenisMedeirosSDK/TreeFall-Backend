@@ -20,7 +20,7 @@ export class createImages1603201697338 implements MigrationInterface {
           },
           {
             name: 'treefall_id',
-            type: 'interger',
+            type: 'uuid',
           },
         ],
         foreignKeys: [
