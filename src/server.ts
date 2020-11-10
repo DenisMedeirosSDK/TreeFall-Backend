@@ -1,7 +1,8 @@
-import 'dotenv';
+import path from 'path';
+
+import 'dotenv/config';
 import express from 'express';
 import routes from './routes';
-import path from 'path';
 import cors from 'cors';
 
 import 'express-async-errors';
@@ -17,6 +18,4 @@ app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')));
 
 app.use(errorHandler);
 
-app.listen(3333, () => {
-  console.log('Server listening on port 3333');
-});
+app.listen(process.env.PORT || 3333);
