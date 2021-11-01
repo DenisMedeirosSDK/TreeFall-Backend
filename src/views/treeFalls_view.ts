@@ -12,6 +12,7 @@ export default {
       country: treeFall.country,
       latitude: Number(treeFall.latitude),
       longitude: Number(treeFall.longitude),
+      eventType: Number(treeFall.eventType),
       zipcode: treeFall.zipcode,
       images: imageView.renderMany(treeFall.images),
     };

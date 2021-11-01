@@ -37,6 +37,7 @@ export default {
       zipcode,
       latitude,
       longitude,
+      eventType,
     } = request.body;
 
     const treeFallRepository = getRepository(TreeFall);
@@ -59,6 +60,7 @@ export default {
       zipcode,
       latitude,
       longitude,
+      eventType,
       images,
     };
 
@@ -71,6 +73,7 @@ export default {
       zipcode: Yup.string().required(),
       latitude: Yup.number().required(),
       longitude: Yup.number().required(),
+      eventType: Yup.number().required(),
       images: Yup.array(
         Yup.object().shape({
           path: Yup.string().required(),

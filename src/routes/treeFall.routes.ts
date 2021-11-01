@@ -9,6 +9,7 @@ const upload = multer(uploadConfig);
 
 treeFallRoutes.get('/show/:id', TreeFallController.show);
 treeFallRoutes.get('/index', TreeFallController.index);
+// treeFallRoutes.get('/eventType', TreeFallController.eventType);
 treeFallRoutes.post(
   '/create',
   upload.array('images'),
