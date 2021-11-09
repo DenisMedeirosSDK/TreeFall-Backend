@@ -28,3 +28,17 @@ npm run typeorm migration:run
 
 npm run dev
 ```
+
+**Alguns comandos uteis**
+
+```bash
+## Veja todos os camandos do ORM
+npm run typeorm
+
+# Criar uma nova migartion
+$ npm run typeorm migration:create -n NOME_DA_MIGRATION #ou
+$ npx run typeorm migration:create -n NOME_DA_MIGRATION
+
+# Executar as migartions
+npm run typeorm migration:run
+```

@@ -73,7 +73,7 @@ export default {
       zipcode: Yup.string().required(),
       latitude: Yup.number().required(),
       longitude: Yup.number().required(),
-      eventType: Yup.number().required(),
+      eventType: Yup.string().required(),
       images: Yup.array(
         Yup.object().shape({
           path: Yup.string().required(),

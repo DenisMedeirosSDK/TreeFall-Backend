@@ -37,7 +37,7 @@ export default class TreeFall {
   longitude: number;
 
   @Column()
-  eventType: EventType;
+  eventType: string;
 
   @OneToMany(() => Image, image => image.treeFall, {
     cascade: ['insert', 'update'],
